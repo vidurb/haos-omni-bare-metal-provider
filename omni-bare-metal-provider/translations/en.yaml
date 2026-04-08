@@ -1,0 +1,12 @@
+---
+configuration:
+  omni_endpoint: Omni API endpoint URL
+  omni_service_account_key: Omni service account key
+  provider_id: Infrastructure provider ID in Omni
+  provider_name: Provider display name in Omni
+  api_advertise_address: IP address advertised to agents and DHCP clients
+  dhcp_proxy_interface: Interface name or IP for DHCP proxy (optional)
+  dhcp_proxy_port: DHCP proxy UDP port
+  disable_dhcp_proxy: Disable the DHCP proxy
+  insecure_skip_tls_verify: Skip TLS verification for Omni API
+  debug: Enable debug logging

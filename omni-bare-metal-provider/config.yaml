@@ -1,0 +1,45 @@
+---
+name: HAOS Omni Bare Metal Provider
+version: "1.0.0"
+slug: omni_bare_metal_provider
+description: >-
+  Runs the Sidero Omni bare metal infrastructure provider (DHCP proxy, iPXE,
+  BMC integration) on your Home Assistant host. Requires host networking.
+url: https://github.com/vidurb/haos-omni-bare-metal-provider
+image: ghcr.io/vidurb/haos-omni-bare-metal-provider/omni-bare-metal-provider
+startup: application
+boot: manual
+init: false
+host_network: true
+apparmor: false
+privileged:
+  - NET_RAW
+  - NET_ADMIN
+arch:
+  - aarch64
+  - amd64
+stage: stable
+
+options:
+  omni_endpoint: null
+  omni_service_account_key: null
+  provider_id: bare-metal
+  provider_name: Bare Metal
+  api_advertise_address: null
+  dhcp_proxy_interface: ""
+  dhcp_proxy_port: 67
+  disable_dhcp_proxy: false
+  insecure_skip_tls_verify: false
+  debug: false
+
+schema:
+  omni_endpoint: url
+  omni_service_account_key: password
+  provider_id: str
+  provider_name: str
+  api_advertise_address: str
+  dhcp_proxy_interface: str?
+  dhcp_proxy_port: port
+  disable_dhcp_proxy: bool
+  insecure_skip_tls_verify: bool
+  debug: bool
