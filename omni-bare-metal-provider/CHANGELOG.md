@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.1 - 2026-04-08
+
+- Fix release image tag mismatch by stripping a leading `v` from GitHub release tags in CI image publishing.
+- Keep add-on `config.yaml` version (`1.0.1`) aligned with published GHCR image tags.
+
 ## 1.0.0 - 2026-04-08
 
 - First release.

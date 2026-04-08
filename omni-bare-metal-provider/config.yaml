@@ -1,6 +1,6 @@
 ---
 name: HAOS Omni Bare Metal Provider
-version: "1.0.0"
+version: "1.0.1"
 slug: omni_bare_metal_provider
 description: >-
   Runs the Sidero Omni bare metal infrastructure provider (DHCP proxy, iPXE,
