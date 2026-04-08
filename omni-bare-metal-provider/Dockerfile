@@ -6,6 +6,7 @@ RUN apk add --no-cache xz-libs
 
 COPY --from=upstream /provider /usr/local/bin/provider
 COPY --from=upstream /usr/bin/zbin /usr/bin/zbin
+COPY --from=upstream /usr/bin/zbin /bin/zbin
 COPY --from=upstream /var/lib/ipxe /var/lib/ipxe
 COPY --from=upstream /assets /assets
 
